@@ -1,0 +1,33 @@
+key	value
+dataset	hanjadict-data
+dataset_version	2026.10.22
+schema_version	1
+built_at	2026-10-22T20:42:14+09:00
+license	CC-BY-SA-4.0
+exporter	export_public.py
+count.ko_words	341773
+count.ko_senses	397732
+count.ko_zh_equivs	82300
+count.ko_synonyms	10193
+count.zh_words	124814
+count.zh_senses	199613
+count.ko_zh_links	34921
+count.ko_char_words	884174
+count.zh_char_words	427601
+count.notes	985
+count.glyphs	16157
+count.char_variants	21090
+source.stdict	국립국어원 표준국어대사전 (CC BY-SA 2.0 KR)
+source.stdict.files	88
+source.stdict.files_digest_sha256	6178083b1d5726803240bd26c6cbf88fa6bd2ebe0009bdd2a2771768180b4592
+source.krdict	국립국어원 한국어기초사전 (CC BY-SA 2.0 KR)
+source.krdict.files	11
+source.krdict.files_digest_sha256	1f77cdb4df952e00d4dbc1025de40fc3082b9366938ab7c4f17999629c31f7c5
+source.cedict	CC-CEDICT (CC BY-SA 4.0)
+source.cedict.sha256	cdd661993ff46764184252231bc3bf9b28d2d9460f9f67da45d557371b74884b
+source.cedict.entries	124814
+source.cedict_ko	CC-CEDICT 영어 풀이의 한국어 번역 (AI, CC BY-SA 4.0 2차 저작물)
+source.cedict_ko.sha256	65cfc23721879441765c49dfa6b27e605d37148fe3058e489d06f3e52465efeb
+source.unihan	Unicode Unihan Database (Unicode License v3)
+source.unihan.sha256	f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e
+source.hsk30.sha256	8c2b73f74776240bcf154624730fc6fb2c42c254d5c5d0f88943878b8e575b9b
