@@ -4,7 +4,7 @@
 한국어 낱말(표준국어대사전·한국어기초사전)과 중국어 낱말(CC-CEDICT)을 같은 한자로 잇고,
 한자 글자 정보(Unicode Unihan)와 한·중 비교 해설 985건을 더했습니다.
 
-앱: **TODO — 앱 소개 또는 스토어 링크**
+앱: **한중종합사전** — App Store·Google Play·Microsoft Store 출시 준비 중
 
 이 자료는 CC BY-SA 원 저작물로 만들었으므로 **전체를 CC BY-SA 4.0 으로 공개**합니다.
 (국립국어원 두 사전은 CC BY-SA 2.0 KR 이고, 그 부분은 원 조건도 함께 지킵니다. [ATTRIBUTION.md](ATTRIBUTION.md))
@@ -57,7 +57,7 @@ sqlite3 hanjadict-data.sqlite "
 ## 어디에 있나 (저장소 · Releases)
 
 데이터가 커서(SQLite 약 170MB, TSV 합 약 105MB) GitHub 의 파일당 100MB 한도를 넘습니다.
-그래서 **전체 자료는 [Releases](TODO-releases-url) 에서 내려받고**, 이 저장소에는 문서와 작은 표본만 둡니다.
+그래서 **전체 자료는 [Releases](https://github.com/ongocompany/hanjadict-data/releases) 에서 내려받고**, 이 저장소에는 문서와 작은 표본만 둡니다.
 
 | 파일 | 어디에 | 내용 |
 |---|---|---|
@@ -74,8 +74,8 @@ sqlite3 hanjadict-data.sqlite "
 
 ```sh
 # 판 이름은 Releases 페이지에서 확인합니다 (예: 2026.10.22)
-curl -LO https://github.com/TODO-owner/TODO-repo/releases/download/v2026.10.22/hanjadict-data-2026.10.22.sqlite.zst
-curl -LO https://github.com/TODO-owner/TODO-repo/releases/download/v2026.10.22/SHA256SUMS
+curl -LO https://github.com/ongocompany/hanjadict-data/releases/download/v2026.10.22/hanjadict-data-2026.10.22.sqlite.zst
+curl -LO https://github.com/ongocompany/hanjadict-data/releases/download/v2026.10.22/SHA256SUMS
 shasum -a 256 -c --ignore-missing SHA256SUMS
 zstd -d hanjadict-data-2026.10.22.sqlite.zst        # → hanjadict-data-2026.10.22.sqlite
 ```
@@ -129,7 +129,7 @@ python3 tools/export_public.py --db <앱의 dict.db> --out <작업 폴더> --rep
 2. 바뀐 문서를 커밋합니다.
 3. `dist/` 의 파일을 새 Release(`v<판>`)에 올립니다.
 
-자료의 오류는 Issues 로 알려 주세요: **TODO — 저장소 주소**. 고친 내용은 원본 자료를 바로잡은 뒤 다음 판에 반영합니다.
+자료의 오류는 Issues 로 알려 주세요: **https://github.com/ongocompany/hanjadict-data/issues**. 고친 내용은 원본 자료를 바로잡은 뒤 다음 판에 반영합니다.
 
 ## 라이선스
 
@@ -141,8 +141,8 @@ python3 tools/export_public.py --db <앱의 dict.db> --out <작업 폴더> --rep
 
 ## 문의
 
-- 연락 이메일: **TODO**
-- 개인정보처리방침·지원 페이지: `docs/` (GitHub Pages 주소 TODO)
+- 연락 이메일: **support@hanjahanja.co.kr**
+- 개인정보처리방침·지원 페이지: `docs/` (https://ongocompany.github.io/hanjadict-data/)
 
 ---
 
@@ -155,8 +155,8 @@ character information from the Unicode Unihan Database (Unicode License v3) and 
 Because it is built from CC BY-SA works, **the whole dataset is released under CC BY-SA 4.0**.
 
 - **Contents**: 12 tables plus `meta`, as one SQLite file or one UTF-8 TSV file per table (same content). Row counts are in the table above; column documentation is in [SCHEMA.md](SCHEMA.md).
-- **Download**: the full data is larger than GitHub's 100 MB file limit, so it is attached to [Releases](TODO-releases-url) as `.sqlite.zst` / `.gz` and `-tsv.tar.zst` / `.gz` with `SHA256SUMS`. This repository holds documentation, the schema and 30-row samples of every table.
+- **Download**: the full data is larger than GitHub's 100 MB file limit, so it is attached to [Releases](https://github.com/ongocompany/hanjadict-data/releases) as `.sqlite.zst` / `.gz` and `-tsv.tar.zst` / `.gz` with `SHA256SUMS`. This repository holds documentation, the schema and 30-row samples of every table.
 - **Left out**: the Korean Hanja Society (한국어문회) grade/reading data for its roughly 6,000 assigned characters (a separate right; the app uses it internally only), the app's internal search index, audio files and paths, and build information.
 - **Caveats**: the Korean glosses of CC-CEDICT entries (`zh_senses.ko`) and the comparison notes (`notes`) are AI-generated and not yet human-reviewed; the English originals are kept next to them. `rank` is an app-internal sort key.
 - **Attribution**: please credit the original works listed in [ATTRIBUTION.md](ATTRIBUTION.md); derivative works must be shared under the same license.
-- **Contact / app link**: TODO.
+- **Contact**: support@hanjahanja.co.kr. **App**: 한중종합사전 (Han-Jung Dictionary), coming to the App Store, Google Play and Microsoft Store.
