@@ -4,7 +4,7 @@
 한국어 낱말(표준국어대사전·한국어기초사전)과 중국어 낱말(CC-CEDICT)을 같은 한자로 잇고,
 한자 글자 정보(Unicode Unihan)와 한·중 비교 해설 985건을 더했습니다.
 
-앱: **한중종합사전** — App Store·Google Play·Microsoft Store 출시 준비 중
+앱: **한중종합사전** — https://hanjadict.ongo.kr (App Store·Google Play·Microsoft Store 출시 준비 중)
 
 이 자료는 CC BY-SA 원 저작물로 만들었으므로 **전체를 CC BY-SA 4.0 으로 공개**합니다.
 (국립국어원 두 사전은 CC BY-SA 2.0 KR 이고, 그 부분은 원 조건도 함께 지킵니다. [ATTRIBUTION.md](ATTRIBUTION.md))
